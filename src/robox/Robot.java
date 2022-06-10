@@ -1,5 +1,5 @@
 
-package p1e1;
+package robox;
 
 import java.util.Scanner;
 

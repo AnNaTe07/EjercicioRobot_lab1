@@ -1,8 +1,9 @@
-package p1e1;
+package robox;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class P1e1 {
+public class robox {
 
     public static void main(String[] args) {
 
@@ -28,13 +29,15 @@ public class P1e1 {
             System.out.println("================================");
             System.out.println("====   INGRESE UNA OPCION   ====");
             System.out.println("================================");
-            do {
+       try{    do {
                 op = e.nextInt();
                 if (op < 1 || op > 9) {
                     System.out.println("!!!! INGRESE UNA OPCION CORRECTA !!!!");
                 }
             } while (op < 1 || op > 9);
-
+       }catch(InputMismatchException ex){
+           System.out.println("La opción ingresada no corresponde a lo solicitado.");
+       }
             switch (op) {
                 case 1:
                     robox.despertar();
