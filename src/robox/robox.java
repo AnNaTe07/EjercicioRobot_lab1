@@ -38,7 +38,7 @@ public class robox {
        }catch(InputMismatchException ex){
            System.out.println("La opción ingresada no corresponde a lo solicitado.");
        }
-            switch (op) {
+            switch (op=0) {
                 case 1:
                     robox.despertar();
                     continue;
