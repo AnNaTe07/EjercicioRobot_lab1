@@ -10,7 +10,7 @@ public class robox {
         Robot robox = new Robot();
         Hombre lalo = new Hombre();
         Hombre carla = new Hombre();
-        int op;
+        int op=0;
         Scanner e = new Scanner(System.in);
         do {
 
@@ -38,7 +38,7 @@ public class robox {
        }catch(InputMismatchException ex){
            System.out.println("La opción ingresada no corresponde a lo solicitado.");
        }
-            switch (op=0) {
+            switch (op) {
                 case 1:
                     robox.despertar();
                     continue;
